@@ -1,3 +1,7 @@
+<?php
+  include 'modelo/conexion.php'
+  
+  ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -7,10 +11,11 @@
     <link rel="stylesheet"  href="style.css">
     
 
-    <title>Formulario</title>
+    <title>Formulario Registro</title>
 </head>
 <body>
-<div class="formulario">
+<div class="formulario" metho>
+    <form action="controlador/registroGarantia.php" method="post">
             <h1>CAEXCO</h1>
             <h2>Certificado de garantias</h2>
             <p>Nº Documento de Venta:</p>
@@ -26,7 +31,7 @@
             <p>Teléfono:</p>
             <input class="control"type="text" name="telefono" placeholder="Ingrese su numero de teléfono">
             <p>Fecha de venta:</p> 
-            <input class="control"type="text" name="venta" placeholder="Fecha de venta">
+            <input class="control"type="text" name="fechaInicio" placeholder="Fecha de venta">
             <p>Marca:</p>
             <input class="control"type="text" name="marca" placeholder="Ingrese la marca">
             <p>Modelo:</p>
@@ -35,6 +40,7 @@
             <input class="control"type="text" name="serie" placeholder="Ingrese Nº de motor/equipo"><br><br>
             <input class="boton"type="submit" name="registrar" value="Registrar">
     <!-- <input type="checkbox" name="opcion6" value="6">La soga<br> -->
+</form>
 </div>
 
     

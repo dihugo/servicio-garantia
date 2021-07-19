@@ -28,7 +28,7 @@
             $aux1= "insert into benificiado (nombre, ci, direccion) values ('$name', '$nit', '$address')";
               guardarBeneficiado($aux1);
             $beno = "select id_beneficiado from benificiado where ci = $nit";
-            $res1 = getBeneficiado($beno);
+              $res1 = getBeneficiado($beno);
             foreach($res1 as $id)
               $idb=$id['id_beneficiado'];
        }
@@ -48,7 +48,7 @@
               $valor = "insert into equipo(marca, modelo, numero_serie) values ('$marca', '$modelo', '$serie')";
               guardarBeneficiado($valor);
               $equi = "select id_equipo from equipo where numero_serie = '$serie'";
-              $equipo1 = getEquipo($equi);
+               $equipo1 = getEquipo($equi);
               foreach($equipo1 as $id )
                 $ide = $id['id_equipo'];
      }
