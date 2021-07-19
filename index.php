@@ -9,7 +9,7 @@
                     <ul>
 					 <li><a href="">Garantia</a></li>
                         <ul>
-						  <li><a href="http://stock.com/registroProducto.php">Registro Garantia</a></li>
+						  <li><a href="http://servicio-garantia.com/vista/system.php">Registro Garantia</a></li>
                         </ul>
                     </ul>
                     <ul>
