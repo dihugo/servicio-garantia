@@ -4,5 +4,5 @@
   echo $fechaActual;
 
   //Validador de días de garantía
-  
+ 
 ?>
