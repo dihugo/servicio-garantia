@@ -13,20 +13,33 @@
         <form action="" class="form-inline">
             <div class="form-group">
                 <label for="">Fecha:</label>
-                <input class="form-control" type="date">
+                <div class="form-group">
+                    <!-- <input class="form-control" type="date"> -->
+                    <?php
+                    $fechaActual = Date('d/m/y','h:m:s');
+                    echo $fechaActual;
+                    ?>
+                </div>
             </div>
 
             <div class="form-group">
-                <div class="form-group">
+                <div class="form-inline">
                     <label for="">Número se serie:</label>
-                    <input class="form-control" type="text" placeholder="Ingresar Nº de serie">
+                        <div class="input-group">
+                            <div class="form-outline">
+                                <input type="search" id="" class="form-control" />
+                            </div>
+                            <button class="btn btn-primary"type="button">
+                                <i class="fas fa-search">Buscar</i>
+                            </button>
+                        </div>
                 </div>
             </div>
 
             <div class="form-group">
                 <div class="form-group">
                     <label for="">Marca:</label>
-                    <input class="form-control" type="text" placeholder="Ingresar marca">
+                    <input class="form-control"type="text" placeholder="Ingresar marca">
                 </div>
             </div>
 
@@ -92,7 +105,7 @@
                     <textarea class="form-control"name="observacion" id=""rows="3"placeholder="Ingresar observaciones"></textarea>
                 </div>
             </div>
-            <center><br><!-- <input class="btn-primary"type="submit" value="Guardar"> --><button class="btn btn-primary">Guardar</button></center>
+            <center><br><!-- <input class="btn-primary"type="submit" value="Guardar"> --><button class="btn btn-primary">Guardar</button></center><br>
         </form>
 
     </div>

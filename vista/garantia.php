@@ -18,7 +18,7 @@
     <div class="container">
         <form action="controlador/registroGarantia.php" method="post">
                 <center><h1>CAEXCO</h1></center>
-              <center><h2>Certificado de garantias</h2></center>
+              <center><h2>Certificado de garantía</h2></center>
                 <div class="form-group">
                       <label for=""> Nº Documento de Venta:</label>
                       <input class="form-control"type="text" name="venta" placeholder="Ingrese el Nº de venta">
@@ -55,9 +55,11 @@
                                             </div>
                                             <div class="form-group"><br>
                                                 <label for="">Estado:</label>
-                                              <button class="btn-primary">En proceso</button>
-                                              <button class="btn-primary">Cancelado</button>
-                                              <button class="btn-primary">Finalizado</button>
+                                                <div class="form-control">
+                                                  <input class="form-check-input" type="radio" name="hm" value="proceso" required> En proceso
+                                                  <input class="form-check-input" type="radio" name="hm" value="cancelado" required> Canselado
+                                                  <input class="form-check-input" type="radio" name="hm" value="finalizado" required> Finalizado
+                                                </div>
                                             </div>  
                                           </div>
                                         </form>
@@ -74,7 +76,7 @@
                       <input class="form-control"type="text" name="modelo" placeholder="Ingrese su modelo">
                       <label for="">Nº de serie de equipo/motor</label>
                       <input class="form-control"type="text" name="serie" placeholder="Ingrese Nº de motor/equipo"><br>
-                      <center><input class="btn-primary"type="submit" name="registrar" value="Registrar"></center><br>
+                      <center><input class="btn btn-primary"type="submit" name="registrar" value="Registrar"></center><br>
                 </div>
                 <!-- <input type="checkbox" name="opcion6" value="6">La soga<br> -->
         </form>
