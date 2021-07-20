@@ -73,8 +73,8 @@
                       <label for="">Modelo:</label>
                       <input class="form-control"type="text" name="modelo" placeholder="Ingrese su modelo">
                       <label for="">Nº de serie de equipo/motor</label>
-                      <input class="form-control"type="text" name="serie" placeholder="Ingrese Nº de motor/equipo"><br><br>
-                      <input class="btn-primary"type="submit" name="registrar" value="Registrar">
+                      <input class="form-control"type="text" name="serie" placeholder="Ingrese Nº de motor/equipo"><br>
+                      <center><input class="btn-primary"type="submit" name="registrar" value="Registrar"></center><br>
                 </div>
                 <!-- <input type="checkbox" name="opcion6" value="6">La soga<br> -->
         </form>
